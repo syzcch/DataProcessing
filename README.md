@@ -2,6 +2,10 @@
 Load big data, cleaning, processing and store them in DB
 
 1. If need load data, please set loaddata = yes in application.properties.
+and set your data file like this:
+dataset.url = /Users/rogersong/Downloads/tier1FBPosts.csv      // means post file
+comments.url = /Users/rogersong/Downloads/tier1FBPosts_facebook_comments.csv    // means comments file
+
 2. That's backend project, need running with frontend project.
 3. compiling command: mvn clean install -Dmaven.test.skip=true 
 4. Will add unit test later.
