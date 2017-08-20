@@ -3,6 +3,7 @@ Load big data, cleaning, processing and store them in DB
 
 1. If need load data, please set loaddata = yes in application.properties.
 and set your data file like this:
+
 dataset.url = /Users/rogersong/Downloads/tier1FBPosts.csv      // means post file
 
 comments.url = /Users/rogersong/Downloads/tier1FBPosts_facebook_comments.csv    // means comments file
