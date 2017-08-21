@@ -16,3 +16,5 @@ comments.url = /Users/rogersong/Downloads/tier1FBPosts_facebook_comments.csv    
 7. I choose Mysql for basic DB, I created it in my AWS RDS service.
 8. For db sql, please check db.sql
 9. You can run frontend proj and backend proj in your local machine.
+10. backend service running on port 5000, localhost.
+11. frotend service running on port 3000, localhost.
