@@ -21,8 +21,6 @@ comments.url = /Users/rogersong/Downloads/tier1FBPosts_facebook_comments.csv    
 12. Used Mybatis for OR mapping.
 
 Next:
-Add log4j into the proj.
-
-Draw frontend and let it more beautiful.
-
-Reduce hard code in frontend proj.
+1. Add log4j into the proj.
+2. Draw frontend and let it more beautiful.
+3. Reduce hard code in frontend proj.
