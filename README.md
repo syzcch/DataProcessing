@@ -22,5 +22,7 @@ comments.url = /Users/rogersong/Downloads/tier1FBPosts_facebook_comments.csv    
 
 Next:
 Add log4j into the proj.
+
 Draw frontend and let it more beautiful.
+
 Reduce hard code in frontend proj.
