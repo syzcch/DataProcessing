@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
- * Created by rogersong on 28/04/17.
+ * Created by rogersong on 18/08/17.
  *
  */
 @ComponentScan(basePackages={"net.quantiful.dataprocess"})
@@ -30,6 +30,6 @@ public class ServiceApplication extends SpringBootServletInitializer implements 
     }
     @Override
     public void customize(ConfigurableEmbeddedServletContainer container) {
-        container.setPort(5000);  // the default port is 5000 in aws's nginx
+        container.setPort(5000);  // the default port is 5000
     }
 }

@@ -20,6 +20,10 @@ public class NameDetails {
     @Autowired
     CommentMapper commentMapper;
 
+    /*
+     * Http get
+     * get customer's details by customer's name
+     */
     @RequestMapping(value = "/details/{name}", method = RequestMethod.GET)
     CustomerRes getCustomer(@PathVariable("name") String name) {
         int male = 0;
@@ -47,6 +51,10 @@ public class NameDetails {
         return customerRes;
     }
 
+    /*
+     * get top hot topics
+     *  Http Get request
+     */
     @RequestMapping(value = "/posts/frequence/{num}", method = RequestMethod.GET)
     List<String> getTop5(@PathVariable("num") int num) {
 
@@ -56,6 +64,10 @@ public class NameDetails {
         return res;
     }
 
+    /*
+     * Get post details by post id
+     * Http Get request
+     */
     @RequestMapping(value = "/posts/{id}", method = RequestMethod.GET)
     PostRes getPostInfo(@PathVariable("id") String id) {
         int male = 0;
@@ -96,6 +108,10 @@ public class NameDetails {
         return postRes;
     }
 
+    /*
+     * Http Post request
+     * add new comments here
+     */
     @RequestMapping(value = "/addname", method = RequestMethod.POST)
     ResponseEntity<?> addUserInfo(@RequestBody CommentObj input) {
         int male = 0;

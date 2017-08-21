@@ -21,9 +21,11 @@ import java.util.logging.Logger;
 @Component
 public class StartupRunner implements CommandLineRunner {
 
+    //dataset.url = /Users/rogersong/Downloads/tier1FBPosts.csv      means post file
     @Value("${dataset.url}")
     private String dataSet;
 
+    //comments.url = /Users/rogersong/Downloads/tier1FBPosts_facebook_comments.csv    means comments file
     @Value("${comments.url}")
     private String comment;
 
@@ -38,6 +40,7 @@ public class StartupRunner implements CommandLineRunner {
 
     //init it
     private void initDataSet() {
+        // if it equals yes, then load data files and cleaning and processing then store them into db
         if(loadData.toLowerCase().equals("yes")){
             List<String[]> commentList = DataLoader.loadCSV(comment);
             List<String[]> dataSetList = DataLoader.loadCSV(dataSet);
