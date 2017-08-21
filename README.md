@@ -18,3 +18,9 @@ comments.url = /Users/rogersong/Downloads/tier1FBPosts_facebook_comments.csv    
 9. You can run frontend proj and backend proj in your local machine.
 10. backend service running on port 5000, localhost.
 11. frotend service running on port 3000, localhost.
+12. Used Mybatis for OR mapping.
+
+Next:
+Add log4j into the proj.
+Draw frontend and let it more beautiful.
+Reduce hard code in frontend proj.
