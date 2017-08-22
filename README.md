@@ -10,7 +10,7 @@ comments.url = /Users/rogersong/Downloads/tier1FBPosts_facebook_comments.csv    
 
 2. That's backend project, need running with frontend project.
 3. compiling command: mvn clean install -Dmaven.test.skip=true 
-4. Will add unit test later.
+4. I have added some unit test in it, so for compiling, please use mvn clean install -Dmaven.test.skip=true to skip unit test.
 5. Provide some rest API being called by frontend
 6. Used java -jar package name to run it
 7. I choose Mysql for basic DB, I created it in my AWS RDS service.
@@ -24,3 +24,4 @@ Next:
 1. Add log4j into the proj.
 2. Draw frontend and let it more beautiful.
 3. Reduce hard code in frontend proj.
+4. add more unit test
