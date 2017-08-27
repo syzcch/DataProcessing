@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -39,7 +40,7 @@ public class StartupRunner implements CommandLineRunner {
     CommentMapper commentMapper;
 
     //init it
-    private void initDataSet() {
+    private void initDataSet() throws SQLException, ClassNotFoundException {
         // if it equals yes, then load data files and cleaning and processing then store them into db
         if(loadData.toLowerCase().equals("yes")){
             List<String[]> commentList = DataLoader.loadCSV(comment);
@@ -63,6 +64,8 @@ public class StartupRunner implements CommandLineRunner {
 
             }
         }
+
+        TestHive.runit();
     }
 
     @Override
